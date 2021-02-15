@@ -1,0 +1,365 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url("background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* POKEDEX OUTER SHAPES */
+
+.hoennPokedex {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rectangle {
+    width: 400px;
+    height: 300px;
+    background-color: #ff632a;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3%;
+    clip-path: polygon(
+            0 11%,
+            15% 0,
+            83% 0,
+            99% 10%,
+            100% 90%,
+            90% 100%,
+            10% 100%,
+            0% 90%,
+            0% 10%
+    );
+}
+
+.inner-rectangle {
+    width: 600px;
+    height: 300px;
+    right: 4px;
+    top: -319px;
+    background-color: #ff632a;
+    position: relative;
+    clip-path: polygon(
+            0 10%,
+            19% 0,
+            83% 0,
+            100% 10%,
+            100% 90%,
+            87% 100%,
+            14% 98%,
+            0% 90%,
+            0% 10%
+    );
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3%;
+}
+
+.bottom-rectangle {
+    width: 444px;
+    height: 300px;
+    right: 2px;
+    top: -646px;
+    background-color: #ff632a;
+    position: relative;
+    clip-path: polygon(0 11%, 15% 0, 83% 0, 99% 10%, 100% 92%, 90% 100%, 13% 100%, 0% 90%, 0% 10%);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 3%;
+}
+
+
+.side1, .side2, .side3, .side4 {
+    background-color: #8a8a8a;
+    width: 107px;
+    height: 20px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    border-radius: 23%;
+}
+
+.side1 {
+    left: -251px;
+    transform: rotate(170deg);
+    top: -960px;
+    z-index: -1;
+}
+
+.side2 {
+    left: 242px;
+    transform: rotate(15deg);
+    top: -982px;
+    z-index: -1;
+}
+
+
+.side3 {
+    right: -239px;
+    transform: rotate(166deg);
+    top: 364px;
+    z-index: -1;
+}
+
+.side4 {
+    right: 242px;
+    transform: rotate(19deg);
+    top: 342px;
+    z-index: -1;
+}
+
+/* POKEDEX INNER CONTENT */
+
+/* POKEDEX SCREEN */
+
+.screen-bg {
+    width: 286px;
+    height: 270px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    top: 10px;
+}
+
+.screen {
+    width: 270px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    background-color: #a4a4fd;
+    border-radius: 10px;
+    top: -72px;
+}
+
+.screen-sides {
+    width: 280px;
+    height: 81px;
+    position: relative;
+    margin: auto;
+    background-color: #a4a4fd;
+    border-radius: 10px;
+    top: 50px;
+    right: 5px;
+}
+
+.background {
+    width: 512px;
+    height: 81px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    top: 96px;
+    right: 73px;
+}
+
+
+/* POKEDEX AUDIO SLOTS */
+
+.sound, .sound2, .sound3, .sound4 {
+    background-color: #56100a;
+    position: relative;
+    height: 3px;
+    width: 50px;
+    transform: rotate(160deg);
+    margin: auto;
+    left: 179px;
+    top: 262px;
+    margin-top: 5px;
+}
+
+/* POKEDEX BUTTONS + STYLING */
+
+.background-button {
+    height: 174px;
+    width: 101px;
+    border-radius: 0 50px 50px 0;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    top: -273px;
+    left: -253px;
+}
+
+.pokedex-bg-button {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-color: lightgrey;
+    top: -431px;
+    left: -283px;
+}
+
+.button-line {
+    height: 10px;
+    width: 142px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    top: -502px;
+    left: -283px;
+}
+
+.pokedex-bg-button2 {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    top: -563px;
+    left: -283px;
+}
+
+
+
+.pokedex-button {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-color: #a4a4fd;
+    top: -661px;
+    left: -283px;
+}
+
+
+#run {
+    height: 87px;
+    width: 87px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-color: #a4a4fd;
+    top: -661px;
+    left: -183px;
+    cursor: pointer;
+
+}
+
+
+.deco1, .deco2 {
+    background-color: #56100a;
+    position: relative;
+    height: 10px;
+    width: 50px;
+    transform: rotate(30deg);
+    margin: auto;
+    left: -180px;
+    top: -636px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.deco-button {
+    background-color: lightgrey;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    position: relative;
+    left: 41px;
+    top: 1px;
+}
+
+.next-button, .prev-button {
+    background-color: #89c55d;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 329px;
+    top: -780px;
+}
+
+.next-button {
+    top: -772px;
+    left: 365px;
+}
+
+.switch-button {
+    background-color: #eefcc2;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -922px;
+    left: 309px;
+}
+
+/* POKEDEX INNER SCREEN CONTENT */
+
+#input {
+    position: relative;
+    height: 30px;
+    width: 240px;
+    top: 210px;
+    border-radius: 10%;
+    z-index: 1;
+    left: 11px;
+}
+
+#sprites {
+    position: relative;
+    top: -126px;
+    left: 120px;
+}
+
+p {
+    top: -210px;
+    position: relative;
+    left: 13px;
+    margin-bottom: -6px;
+}
+
+a{
+    display:block;
+}
+
+#first-pokemon, #second-pokemon, #third-pokemon {
+
+    position: relative;
+    top: -810px;
+    left: 20px;
+    max-width: 60px;
+    max-height: 40px;
+    display: inline-block;
+
+
+}
+
+#first-evolution, #second-evolution, #third-evolution {
+    top: -25px;
+    max-height: 79px;
+    padding-left:5px;
+
+}
+
+/* BACKGROUND TITLE */
+
+.title {
+    margin: auto;
+    height: 180px;
+    width: 300px;
+    top: 97px;
+    position: relative;
+}
+
+
